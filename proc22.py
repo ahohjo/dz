@@ -1,15 +1,20 @@
-A = float(input("введите A ="))
-B = float(input("введите B ="))
-print("1 - вычитание","2 - умножение","3 - деление","числа > 3 - сложение")
-N = int(input("Введите желаемую операцию: "))
+A = int(input("A ="))
+B = int(input("B ="))
 
-def Calc(N):
-    if N == 1:
-        return A - B
-    if N == 2:
-        return A * B
-    if N == 3:
-        return A / B
-    if N > 3:
-        return A + B
-print(Calc(N))
+print("Выберите нужное действие, где 1 - вычитание, 2 - умножение, 3 - деление, если будет выбрано число >3, то будет автоматическое сложение")
+
+a = int(input("Действие?"))
+if a == 1:
+    rez = A - B
+    print(rez)
+elif a == 2:
+    rez = A * B
+    print(rez)
+elif a == 3:
+    rez = A // B
+    print(rez)
+else:
+    if a > 3:
+        rez = A + B
+        print(rez)
+    
